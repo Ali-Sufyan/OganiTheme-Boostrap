@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+*{
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+.prenav{
+    background-color: #f5f5f5;
+    height: 47px;
+}
+.aa{
+    font-size: 12px;
+}
+.cartMenu{
+    width: 25%;
+    height: 85vh;
+    position: absolute;
+    border: 2px solid white;
+    top: 15vh;
+    right: 0px;
+    background-color: black;
+    opacity: 0.9;
+    display: grid;
+    transition: 2s;
+    grid-template-rows: 12% 80% 8%;
+    position: fixed;
+    z-index: 1;
+}
+.right{
+    right: -25%;
+}
+.ss{
+    color: white;
+    display: grid;
+    justify-content: center;
+    margin-top:100px;
+}
+.clear{
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+}
+#cartrender{
+    overflow-y: auto;
+}
+#cartRenderss{
+    overflow-y: auto;
+}
+#heading{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.heading{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.hover{
+    visibility: hidden ;
+}
+.parent:hover .hover{
+    transition: .7s;
+    margin-bottom: 60px;
+    visibility: visible;
+}
+.icon:hover{
+    color: white;
+}
+.dropdown-hover:hover{
+    background-color: transparent;
+    color: #7fad39;
+}
+.dropdown-hover{
+    background-color: transparent;
+    color: white;
+}
+.icons{
+    background-color: white;
+}
+.icons:hover{
+    background-color: #7fad39;
+    color: white;
+    transform: rotate(360deg);
+    transition: .5s;
+}
+.sh{
+    width: 100%;
+    height: 90px;
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    border-bottom: 2px solid white;
+    position: relative;
+    padding: 0px 5px 10px 5px;
+    margin-top: 10px;
+}
+.fa-times{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+    margin-right: 10px;
+}
+.right{
+    right: -25%;
+}
+.images{
+    width: 90%;
+    height: 85%;
+}
+.text{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.texts{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+}

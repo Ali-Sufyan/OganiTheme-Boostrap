@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./food.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container-fluid m-0 p-0 position-relative" style="overflow-x: hidden;height: auto;">
+                            <!-- PreNavBar -->
+    <div class="container-fluid prenav px-5">
+            <div class="row px-4 h-100">
+                <div class="col-6 d-flex p-0" style="display: flex;align-items: center;">
+                    <div class="px-1" style="font-size: 14px;"><i class="fa fa-envelope pr-2" style="font-size: 14px;" aria-hidden="true"></i> <span class="p-0" style="margin-left: -2px;">hello@colorlib.com</span></div>
+                    <div class="mx-3" style="width: 1px; height: 20px; background-color: lightgray;"></div>
+                    <div class="mx-2" style="font-size: 14px;">Free Shipping for all Order of $99</div>
+                </div>
+                <div class="col-6 d-flex p-0 align-content-center justify-content-end pr-3">
+                    <div class="d-flex p-0" style="display: flex;align-items: center;">
+                        <div class="" style="display: flex;align-items: center;">
+                            <ul class="d-flex m-0">
+                                <li class="mb-1 mr-3 font-weight-light"><a href="#" class="text-dark aa"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li class="ml-2 mb-1"><a href="#" class="text-dark aa"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li class="ml-4 mb-1"><a href="#" class="text-dark aa"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li class="ml-4 mr-2 mb-1"><a href="#" class="text-dark aa"><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="mx-3 mb-1" style="width: 1px; height: 20px; background-color: lightgray;"></div>
+                        <div class="d-flex mb-1 mr-1 dropdown active">
+                            <div class="mt-2">
+                                <img src="./image/language.png" alt="">
+                            </div>
+                            <div class="">
+                                <a class="mt-1 nav-link dropdown-toggle text-dark" style="font-size: 14px;" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        English
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-white bg-dark " href="#">Spanis</a>
+                        <a class="dropdown-item text-white bg-dark" href="#">English</a>
+                    </div>
+                            </div>
+                        </div>
+                        <div class="mr-3 mb-1" style="width: 1px; height: 20px; background-color: lightgray;"></div>
+                        <div class="p-2 mb-1">
+                            <a href="#" class="text-dark aa"><i class="fa fa-user mr-2" style="font-size: 12px;" aria-hidden="true"></i>Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                            <!-- NavBar -->
+    <div class="container-fluid p-0 mt-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white pl-5 ml-2 row d-flex justify-content-between">
+             <a class="navbar-brand ml-2 mr-5" href="#" style="z-index: 2;">
+                 <img src="./image/logo.png" alt="">
+             </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+     
+             <div class="col-5 collapse navbar-collapse bg-white" id="navbarSupportedContent">
+                 <ul class="navbar-nav mb-1" style="font-size:14px ;font-weight:700px;">
+                     <li class="nav-item active mb-1">
+                         <a class="nav-link font-weight-bold" style="color:#7fad39;letter-spacing: 2px;" href="#">HOME</a>
+                     </li>
+                     <li class="nav-item active ml-4 pl-3">
+                         <a class="nav-link font-weight-bold" style="letter-spacing: 2px;" href="#">SHOP</a>
+                     </li>
+                     <li class="nav-item dropdown ml-4 pl-2 active">
+                         <a class="nav-link dropdown-toggle font-weight-bold" style="letter-spacing: 2px;" href="#" id="navbarDropdown" role="button"
+                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             PAGE
+                         </a>
+                         <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                             <a class="ml-3 dropdown-hover" href="#">Shop Details</a>
+                             <a class="ml-3 dropdown-hover" href="#">Shopping Carts</a>
+                             <a class="ml-3 mr-5 dropdown-hover" href="#">Check Out</a>
+                             <a class="ml-3 dropdown-hover" href="#">Blog Details</a>
+                         </div>
+                     </li>
+                     <li class="nav-item ml-4 active">
+                         <a class="nav-link font-weight-bold" style="letter-spacing: 2px;" href="#">BLOG</a>
+                     </li>
+                     <li class="nav-item ml-4 pl-2 active">
+                         <a class="nav-link font-weight-bold" style="letter-spacing: 2px;" href="#">CONTACT</a>
+                     </li>
+                 </ul>
+             </div>
+             <div class="col-3 mr-4">
+                 <ul class="list-unstyled d-flex">
+                     <li class="pl-4 ml-5 mr-3" onclick="toggleEvents()"><i class="fas fa-heart"></i></li>
+                     <li class="mr-3 ml-1 pl-1" onclick="toggleEvent()"><i class="fas fa-shopping-bag"></i></li>
+                     <li class="ml-3"><small>Item:</small> <p class="d-inline font-weight-bold" style="font-size: 14px;">$150.0</p>
+                     </li>
+                 </ul>
+             </div>
+             <div class="position-absolute z-index-3 rounded-circle h6 font-weight-bold text-white" id="counter1" style="height: 12px;width: 12px;background-color: #7fad39;top: 15.5px;right: 18%; display: flex;justify-content: center;align-items: center;font-size: 10px;">0</div>
+             <div id="counter2" class="position-absolute z-index-3 rounded-circle h6 font-weight-bold text-white" style="height: 12px;width: 12px;background-color: #7fad39;top: 15.5px;right: 15%; display: flex;justify-content: center;align-items: center;font-size: 10px;">0</div>
+         </nav>
+
+                                    <!-- NavBAr 2nd Section -->
+
+         <nav class="navbar navbar-expand-lg navbar-light bg-white pl-5 ml-2 row d-flex justify-content-between" style="margin-top: -28px;">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto ml-3 col-3 py-1">
+                <li class="nav-item dropdown active pl-5 pr-4" style="background-color:#7fad39;">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-bars text-white"></i><span class="ml-3 pr-1 text-white">All Departments</span>
+                  </a>
+                  <div class="dropdown-menu pl-4" style="padding-right: 58px;border-radius: 0%;margin-top: -1px;" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item text-dark py-2" href="#">Fresh Meat</a>
+                      <a class="dropdown-item text-dark py-2" href="#">Vegetables</a>
+                      <a class="dropdown-item text-dark py-2" href="#">Fruit & Nut Gifts</a>
+                      <a class="dropdown-item text-dark py-2" href="#">Fresh Berries</a>
+                      <a class="dropdown-item text-dark py-2" href="#">Ocean Foods</a>
+                      <a class="dropdown-item text-dark py-2" href="#">Butter & Eggs</a>
+                      <a class="dropdown-item text-dark py-2" href="#">Fastfood</a>
+                      <a class="dropdown-item text-dark py-2" href="#">Fresh Onion</a>
+                      <a class="dropdown-item text-dark py-2" href="#">Papayay  & Crisps</a>
+                      <a class="dropdown-item text-dark py-2" href="#">Fresh Bananas</a>
+                      <a class="dropdown-item text-dark py-2" href="#">Drink</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline  border border-lighter col-6 d-flex justify-content-between pr-0" style="margin-left: -20px;">
+                  <h6 class="mx-2 my-0"><a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                      All Categories 
+                  </a>
+              </h6>
+                <input class="mr-sm-2" type="search" placeholder="What do you need?" style="border: none;outline:none;color: grey;">
+                <button class="btn text-white px-4 py-2" style="background-color:#7fad39;outline: none;border-radius: 0%;" type="submit">Search</button>
+              </form>
+              <div class="col-3">
+                      <ul class="navbar-nav mt-2 pt-1">
+                          <li class="nav-item active ml-2">
+                              <a class="nav-link h6 font-weight-bold text-success" href="#"><i class="fas fa-phone-alt bg-light rounded-circle p-3" style="color:#7fad39;"></i></a>
+                          </li>
+                          <li class="nav-item active ml-2">
+                              <a class="nav-link h5" style="font-weight:bolder; font-size: 18px;" href="#">+65 11.188.888</a>
+                              <p class="font-weight-light h6 ml-2" style="font-size: 14px;margin-top: -7px;" >support 24/7 time</p>
+                          </li>
+                      </ul>
+              </div>
+            </div>
+          </nav>
+                                                                  
+                                            <!-- Img Banner -->
+
+          <div class="row d-flex justify-content-between mt-2" style="height: 65vh; overflow-y:hidden ;">
+            <div class="col-3"></div>
+            <div class="col-8 p-0" style="margin-right: 60px;">
+                    <img src="./images/banner.jpg" class="h-100" style="position: relative;width: 97%;" alt="">
+            </div>
+            <div class="mt-5 py-5" style="position: absolute;left:33.5%;">
+                <h6 class="font-weight-bold" style="color:#7fad39;letter-spacing: 3px;font-size: 14px;">FRUITS FRESH </h6>
+                <h1 class="font-weight-bold" style="font-size: 46px;">Vegetable</h1>
+                <h1 class="font-weight-bold" style="font-size: 46px;">100% Organic</h1>
+                <p>Free Pickup and Delivery Available</p>
+                <button class="btn text-white px-4 py-2 font-weight-bold h6 mt-4" style="background-color:#7fad39;outline: none;border-radius: 0%; letter-spacing: 2px;font-size: 14px;" type="submit">SHOP NOW</button>
+            </div>
+        </div>
+      </div>
+
+                                    <!-- First Slider -->
+
+<div class="cntainar-fluid p-5">
+    <div class="container  p-0 ">
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <div class="img d-flex justify-content-between">
+                  <div class="" style="position: relative;">
+                    <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-4 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-size:18px;letter-spacing: 2px">FRISH FRUITS</button>
+                  
+                 <img src="./images/cat-1.jpg"class=" " alt="" style="width:260px; height: 270px;">
+                  </div>
+                 
+<div class="" style="position: relative;">
+  <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-size:18px;letter-spacing: 2px">DRIED FRUIT</button>
+  <img src="./images/cat-2.jpg"class="ml-4"style="width:260px; height: 270px; " alt="">
+</div>
+
+
+                <div style="position: relative;">
+                  <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-weight:bold;font-size:18px;letter-spacing: 2px">VEGETABLES</button>
+                  <img src="./images/cat-3.jpg" class="ml-4"style="width:260px; height: 270px; " alt="">
+                </div>
+
+                <div  style="position: relative;">
+                  <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-weight:bold;font-size:18px;letter-spacing: 2px">DRINK FRUIT</button>
+                  <img src="./images/cat-4.jpg" class=" ml-4"style="width:260px; height: 270px; " alt="">
+                </div>
+              </div>
+            </div>
+                
+              <div class="carousel-item ">
+                <div class="img d-flex justify-content-between">
+                  <div  style="position: relative;">
+                    <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-weight:bold;font-size:18px;letter-spacing: 2px">FRISH FRUITS</button>
+                  
+                    <img src="./images/cat-5.jpg"class=" "style="width:260px; height: 270px; " alt="">
+                    
+                  </div>
+                    <div  style="position: relative;">
+                      <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-weight:bold;font-size:18px;letter-spacing: 2px">DRIED FRUIT</button>
+                    
+                    <img src="./images/cat-1.jpg" class=" ml-4" style="width:260px; height: 270px; "alt="">
+                  </div>
+                    <div style="position: relative;">
+                      <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-weight:bold;font-size:18px;letter-spacing: 2px">VEGETABLES</button>
+                    
+                    <img src="./images/cat-2.jpg"class=" ml-4"style="width:260px; height: 270px; " alt="">
+                  </div>
+                    <div  style="position: relative;">
+                      <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-weight:bold;font-size:18px;letter-spacing: 2px">DRINK FRUIT</button>
+                    
+                    <img src="./images/cat-3.jpg"class=" ml-4" style="width:260px; height: 270px; "alt="">
+                  </div>
+                   </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img d-flex justify-content-between">
+                  <div  style="position: relative;">
+                    <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-weight:bold;font-size:18px;letter-spacing: 2px">FRISH FRUITS</button>
+                  
+                    <img src="./images/cat-4.jpg"class=" "style="width:260px; height: 270px; " alt="">
+                  </div>
+                    <div  style="position: relative;">
+                      <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-weight:bold;font-size:18px;letter-spacing: 2px">DRIED FRUIT</button>
+                    
+                    <img src="./images/cat-5.jpg"class=" ml-4 " style="width:260px; height: 270px; "alt="">
+                  </div>
+                    <div  style="position: relative;">
+                      <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-weight:bold;font-size:18px;letter-spacing: 2px">VEGETABLES</button>
+                    
+                    <img src="./images/cat-1.jpg"class=" ml-4 " style="width:260px; height: 270px; "alt="">
+                  </div>
+                    <div  style="position: relative;">
+                      <button class="d-block position-absolute h6 font-weight-bold z-index-2 w-75 ml-5 mt-5 bg-white"style="top:160px ;height:45px;border:none; color:black;font-weight:bold;font-size:18px;letter-spacing: 2px">DRINK FRUIT</button>
+                    
+                    <img src="./images/cat-2.jpg"class=" ml-4 "style="width:260px; height: 270px; "alt="">
+                   </div>
+                  </div>
+              </div>
+            </div>
+           <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev" style="margin-left: -50px ; height:70px;width: 30px; background-color: white; margin-top:100px;border: 2px solid lightgray;">
+              <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left" style="color: black;"></i></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next" style="margin-right: -50px; background-color:white; height:70px; width: 30px;margin-top:100px;border: 2px solid lightgray;">
+              <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right" style="color: black;"></i></span>
+            </button>
+          </div>
+
+    </div>
+</div>
+
+                                             <!-- Featured Products-->
+
+<div class="container-fluid mt-4">
+    <div class="containar">
+    <div class="row">
+        <div class="col-lg-12">
+<div>
+ <h1 class=" text-center font-weight-bold" style="font-size: 36px;">Featured Product </h1>
+ <hr style="width: 6% ; height: 3px;background-color: #7fad39;margin-left: 47%;margin-top: 2px;display: inline-block">
+ <ul class="list-unstyled d-flex mt-3" style="margin-left: 32.5%;">
+  <li style="font-size:18px;">All
+    <hr style="width: 100% ; height: 1px;background-color: #7fad39;margin-top: 2px;display: inline-block">
+  </li>
+  <li class="ml-4 pl-1" style="font-size:18px;">Oranges</li>
+  <li class="ml-4 pl-1" style="font-size:18px;"> Fresh Meat</li>
+  <li class="ml-4" style="font-size:18px;">Vegetables</li>
+  <li class="ml-4 pl-1" style="font-size:18px;">Fastfood</li>
+  
+</ul>
+</div>
+        </div>
+    </div>
+</div>
+    <div class="container mt-2 p-0 ">
+        <div class="row">
+          <div class=" col-lg-3 col-md-4 col-sm-6 px-3 parent">
+              <div class="position-relative" style="overflow-y: hidden;">
+              <img src="./images/cat-5.jpg"class="w-100 img" alt="">
+              <div class="hover position-absolute z-index-3 w-50 d-flex justify-content-between" style="bottom:-40px;margin-left: 25%;">
+                <div class="border rounded-circle icons dil d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                    <i class="fas fa-heart icon"></i>
+                </div>
+                <div class="border rounded-circle icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                    <i class="fas fa-sync-alt icon"></i>
+                </div>
+                <div class="border rounded-circle cart icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                    <i class="fas fa-cart-plus icon"></i>
+                </div>
+            </div>
+        </div>
+              <div class="mt-2 pt-1">
+<span class="d-flex justify-content-center w-100 name">Crab Pool Security</span>
+<h4 class="mt-2 d-flex justify-content-center h6 font-weight-bold w-100 price" style="font-size: 16px;">$30.00</h4>
+</div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 px-3 parent">
+            <div class="position-relative" style="overflow-y: hidden;">
+                <img src="./images/feature-2.jpg"class="w-100 img" alt="">
+                <div class="hover position-absolute z-index-3 w-50 d-flex justify-content-between" style="bottom:-40px;margin-left: 25%;">
+                  <div class="border rounded-circle dil icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-heart icon"></i>
+                  </div>
+                  <div class="border rounded-circle icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-sync-alt icon"></i>
+                  </div>
+                  <div class="border rounded-circle cart icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-cart-plus icon"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-2 pt-1">
+            <span class="d-flex justify-content-center w-100 name">Crab Pool Security</span>
+            <h4 class="mt-2 d-flex justify-content-center h6 font-weight-bold w-100 price" style="font-size: 16px;">$30.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 px-3 position-relative parent">
+            <div class="position-relative" style="overflow-y: hidden;">
+                <img src="./images/feature-4.jpg"class="w-100 img" alt="">
+                <div class="hover position-absolute z-index-3 w-50 d-flex justify-content-between" style="bottom:-40px;margin-left: 25%;">
+                  <div class="border rounded-circle dil icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-heart icon"></i>
+                  </div>
+                  <div class="border rounded-circle icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-sync-alt icon"></i>
+                  </div>
+                  <div class="border rounded-circle cart icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-cart-plus icon"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-2 pt-1">
+            <span class="d-flex justify-content-center w-100 name">Crab Pool Security</span>
+            <h4 class="mt-2 d-flex justify-content-center h6 font-weight-bold w-100 price" style="font-size: 16px;">$30.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 px-3 parent">
+            <div class="position-relative" style="overflow-y: hidden;">
+                <img src="./images/feature-6.jpg"class="w-100 img" alt="">
+                <div class="hover position-absolute z-index-3 w-50 d-flex justify-content-between" style="bottom:-40px;margin-left: 25%;">
+                  <div class="border rounded-circle dil icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-heart icon"></i>
+                  </div>
+                  <div class="border rounded-circle icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-sync-alt icon"></i>
+                  </div>
+                  <div class="border rounded-circle cart icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-cart-plus icon"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-2 pt-1">
+            <span class="d-flex justify-content-center w-100 name">Crab Pool Security</span>
+            <h4 class="mt-2 d-flex justify-content-center h6 font-weight-bold w-100 price" style="font-size: 16px;">$30.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 px-3 mt-4 pt-2 mb-5 parent">
+            <div class="position-relative" style="overflow-y: hidden;">
+                <img src="./images/feature-8.jpg"class="w-100 img" alt="">
+                <div class="hover position-absolute z-index-3 w-50 d-flex justify-content-between" style="bottom:-40px;margin-left: 25%;">
+                  <div class="border rounded-circle dil icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-heart icon"></i>
+                  </div>
+                  <div class="border rounded-circle icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-sync-alt icon"></i>
+                  </div>
+                  <div class="border rounded-circle cart icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-cart-plus icon"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-2 pt-1">
+            <span class="d-flex justify-content-center w-100 name">Crab Pool Security</span>
+            <h4 class="mt-2 d-flex justify-content-center h6 font-weight-bold w-100 price" style="font-size: 16px;">$30.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 px-3 mt-4 pt-2 mb-5 parent">
+            <div class="position-relative" style="overflow-y: hidden;">
+                <img src="./images/feature-6.jpg"class="w-100 img" alt="">
+                <div class="hover position-absolute z-index-3 w-50 d-flex justify-content-between" style="bottom:-40px;margin-left: 25%;">
+                  <div class="border rounded-circle dil icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-heart icon"></i>
+                  </div>
+                  <div class="border rounded-circle icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-sync-alt icon"></i>
+                  </div>
+                  <div class="border rounded-circle cart icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-cart-plus icon"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-2 pt-1">
+            <span class="d-flex justify-content-center w-100 name">Crab Pool Security</span>
+            <h4 class="mt-2 d-flex justify-content-center h6 font-weight-bold w-100 price" style="font-size: 16px;">$30.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 px-3 mt-4 pt-2 mb-5 parent">
+            <div class="position-relative" style="overflow-y: hidden;">
+                <img src="./images/feature-4.jpg"class="w-100 img" alt="">
+                <div class="hover position-absolute z-index-3 w-50 d-flex justify-content-between" style="bottom:-40px;margin-left: 25%;">
+                  <div class="border rounded-circle dil icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-heart icon"></i>
+                  </div>
+                  <div class="border rounded-circle icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-sync-alt icon"></i>
+                  </div>
+                  <div class="border rounded-circle cart icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-cart-plus icon"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-2 pt-1">
+            <span class="d-flex justify-content-center w-100 name">Crab Pool Security</span>
+            <h4 class="mt-2 d-flex justify-content-center h6 font-weight-bold w-100 price" style="font-size: 16px;">$30.00</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 px-3 mt-4 pt-2 mb-5 parent">
+            <div class="position-relative" style="overflow-y: hidden;">
+                <img src="./image/cat-5.jpg"class="w-100 img" alt="">
+                <div class="hover position-absolute z-index-3 w-50 d-flex justify-content-between" style="bottom:-40px;margin-left: 25%;">
+                  <div class="border rounded-circle dil icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-heart icon"></i>
+                  </div>
+                  <div class="border rounded-circle icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-sync-alt icon"></i>
+                  </div>
+                  <div class="border rounded-circle cart icons d-flex justify-content-center" style="width: 40px; height: 40px;align-items: center;">
+                      <i class="fas fa-cart-plus icon"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-2 pt-1">
+            <span class="d-flex justify-content-center w-100 name">Crab Pool Security</span>
+            <h4 class="mt-2 d-flex justify-content-center h6 font-weight-bold w-100 price" style="font-size: 16px;">$30.00</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+                               <!-- Banner Ads -->
+
+<div class="container p-0 mt-2">
+    <div class="row pt-4">
+      <div class="col-lg-6 md-2 sm-1">
+        <img src="./image/banner-1.jpg"class="w-100" alt="">
+      </div>
+      <div class="col-lg-6 md-2 sm-1">
+        <img src="./image/banner-2.jpg"class="w-100" alt="">
+      </div>
+    </div>
+  </div>
+
+                                <!-- Triple Slider -->
+
+  <div class="container-fluid pt-4 mt-5">
+    <div class="container p-0">
+        <div class="row">
+            <div class="col">
+                <h4 class="font-weight-bold">Latest Products</h4>
+                <div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="">
+                          <div class="d-flex ">
+                            <img src="./image/lp-1.jpg" alt=""style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-4">
+                            <img src="./image/lp-2.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-4">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class=" pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                      </div> 
+                      </div>
+                      <div class="carousel-item">
+                        <div class="">
+                          <div class="d-flex ">
+                            <img src="./image/lp-2.jpg" alt=""style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-2.jpg" alt=""style="height:110px ; width: 110px;"">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                      </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <div class="">
+                          <div class="d-flex">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-2.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;"">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                      </div> 
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-target="#carouselExampleSlidesOnly" data-slide="prev" style="margin-left: 74%; height:30px;width: 30px; background-color: #F2F6FA;border: 1px solid #E6E6E6;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left" style="color: black;"></i></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-target="#carouselExampleSlidesOnly" data-slide="next" style=" background-color:#F2F6FA; height:30px; width: 30px;border: 1px solid #E6E6E6; margin-right: 35px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right" style="color: black;"></i></span>
+                  </button>
+            </div>
+            <div class="col">
+                <h4 class="font-weight-bold">Latest Products</h4>
+                <div id="carouselExampleSlidesOnly2" class="carousel slide mt-5" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="">
+                          <div class="d-flex ">
+                            <img src="./image/lp-1.jpg" alt=""style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-4">
+                            <img src="./image/lp-2.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-4">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class=" pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                      </div> 
+                      </div>
+                      <div class="carousel-item">
+                        <div class="">
+                          <div class="d-flex ">
+                            <img src="./image/lp-2.jpg" alt=""style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-2.jpg" alt=""style="height:110px ; width: 110px;"">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                      </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <div class="">
+                          <div class="d-flex">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-2.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;"">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                      </div> 
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-target="#carouselExampleSlidesOnly2" data-slide="prev" style="margin-left: 74%; height:30px;width: 30px; background-color: #F2F6FA;border: 1px solid #E6E6E6;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left" style="color: black;"></i></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-target="#carouselExampleSlidesOnly2" data-slide="next" style=" background-color:#F2F6FA; height:30px; width: 30px;border: 1px solid #E6E6E6; margin-right: 35px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right" style="color: black;"></i></span>
+                  </button>
+            </div>
+            <div class="col">
+                <h4 class="font-weight-bold">Latest Products</h4>
+                <div id="carouselExampleSlidesOnly3" class="carousel slide mt-5" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="">
+                          <div class="d-flex ">
+                            <img src="./image/lp-1.jpg" alt=""style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-4">
+                            <img src="./image/lp-2.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-4">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class=" pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                      </div> 
+                      </div>
+                      <div class="carousel-item">
+                        <div class="">
+                          <div class="d-flex ">
+                            <img src="./image/lp-2.jpg" alt=""style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-2.jpg" alt=""style="height:110px ; width: 110px;"">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                      </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <div class="">
+                          <div class="d-flex">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-2.jpg" alt="" style="height:110px ; width: 110px;">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                          <div class="d-flex pt-3">
+                            <img src="./image/lp-1.jpg" alt="" style="height:110px ; width: 110px;"">
+                            <div class="">
+                              <span class="pl-4 ">Crab Pool Security</span>
+                              <h4 class="pl-4 mt-2 h6 font-weight-bold w-100" style="font-size: 16px;">$30.00</h4>
+                            </div>
+                          </div>
+                      </div> 
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-target="#carouselExampleSlidesOnly3" data-slide="prev" style="margin-left: 74%; height:30px;width: 30px; background-color: #F2F6FA;border: 1px solid #E6E6E6;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left" style="color: black;"></i></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-target="#carouselExampleSlidesOnly3" data-slide="next" style=" background-color:#F2F6FA; height:30px; width: 30px;border: 1px solid #E6E6E6; margin-right: 35px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right" style="color: black;"></i></span>
+                  </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                                    <!-- blog Section-->
+
+<div class="container-fluid  d-flex justify-content-center mt-5 mb-4 pt-4">
+  <h1 class=" text-center font-weight-bold" style="font-size: 36px;">From The Blog <hr style="width: 35% ; height: 3px;background-color: #7fad39;margin-top: 2px;display: inline-block"></h1>
+</div>
+<div class="container-fluid  mb-5 pb-3">
+    <div class="row pl-5 pr-5">
+  <div class="col-lg-4 pr-2 col-md-4 col-sm-6 ">
+   <div class="pic w-100">
+    <img src="./image/blog-1.jpg" alt="" style="width:97%;">
+     </div>
+    <div class="blog">
+    <ul class="list-unstyled mt-4">
+     <li style="color: #B2B2B2;"><i class="far fa-calendar" style="color: #B2B2B2;"></i> <span> May 4,2019</span><span class="ml-3"><i class="far fa-comment"></i></span><span class="ml-1">5</span></li>         
+      </ul>
+  <h5 class="font-weight-bold">Cooking tips make cooking simple</h5>
+    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+      </div>
+    </div>
+  
+    <div class="col-lg-4 pr-2 col-md-4 col-sm-6 ">
+        <div class="pic w-100">
+         <img src="./image/blog-2.jpg" alt="" style="width:97%;">
+          </div>
+         <div class="blog">
+         <ul class="list-unstyled mt-4">
+          <li style="color: #B2B2B2;"><i class="far fa-calendar" style="color: #B2B2B2;"></i> <span> May 4,2019</span><span class="ml-3"><i class="far fa-comment"></i></span><span class="ml-1">5</span></li>         
+           </ul>
+       <h5 class="font-weight-bold">6 ways to prepare breakfast for 30</h5>
+         <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+           </div>
+         </div>
+  
+  
+         <div class="col-lg-4 pr-2 col-md-4 col-sm-6 ">
+            <div class="pic w-100">
+             <img src="./image/blog-3.jpg" alt="" style="width:97%;">
+              </div>
+             <div class="blog">
+             <ul class="list-unstyled mt-4">
+              <li style="color: #B2B2B2;"><i class="far fa-calendar" style="color: #B2B2B2;"></i> <span> May 4,2019</span><span class="ml-3"><i class="far fa-comment"></i></span><span class="ml-1">5</span></li>         
+               </ul>
+           <h5 class="font-weight-bold">Visit the clean farm in the US</h5>
+             <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+               </div>
+             </div>
+    </div>
+  </div>
+
+                                        <!-- Footer Section -->
+
+  <div class="container-fluid pb-3" style="background-color:#F3F6FA;">
+    <div class="container ">
+    <div class="row pt-4">
+    <div class="col-lg-3 col-md-6 col-sm-6 pr-2">
+    <div class="footer">
+    <div class="flogo">
+      <img src="./image/logo.png"class="pt-5" alt="">
+    </div>
+    <ul class="list-unstyled pt-3">
+    <li>Address: 60-49 Road 11378 New York</li>
+    <li class="pt-3">Phone: +65 11.188.888</li>
+    <li class="pt-3">Email: hello@colorlib.com</li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1" style="font-size: 14px;">
+    <div class="footer pt-5 pl-2">
+    <h6 class="h6 font-weight-bold">Useful Links</h6>
+    <div class="d-flex">
+    <ul class="list-unstyled ">
+    <li class="pt-2">About Us</li>
+    <li class="pt-2">About Our Shop</li>
+    <li class="pt-2">Secure Shopping</li>
+    <li class="pt-2">Delivery infomation</li>
+    <li class="pt-2">Privacy Policy</li>
+    <li class="pt-2">Our Sitemap</li>
+    </ul >
+    <ul class="list-unstyled pl-5 ml-2" style="font-size: 14px;">
+    <li class="pt-2">Who We Are</li>
+    <li class="pt-2">Our Services</li>
+    <li class="pt-2">Projects</li>
+    <li class="pt-2">Contact</li>
+    <li class="pt-2">Innovation</li>
+    <li class="pt-2">Testimonials</li>
+    </ul>
+  </div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+    <div class="footer pt-5" style="margin-right: -5px;">
+    <h6 class="h6 font-weight-bold">Join Our Newsletter Now</h6>
+    <p class="pt-2 mb-4 pb-2" style="font-size: 14px;margin-right: -5px;">Get E-mail updates about our latest shop and special offers.</p>
+    
+    <input type="text" placeholder="Enter your mail" style="height: 50px; width: 68%;margin-top: -1px;" class="border pl-4">
+    <button type="submit" class="site-btn text-white font-weight-bold h6" style="width: 30%;height: 50px;border: none; background-color: #7fad39;margin-left: -3px;">Subscribe</button>
+    <div class="footer mt-4 d-flex justify-content-between" style="width: 60%;">
+      <div class="border bg-white rounded-circle" style="width: 40px;height: 40px;display: flex;justify-content: center;align-items: center;">
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <div class="border bg-white rounded-circle" style="width: 40px;height: 40px;display: flex;justify-content: center;align-items: center;">
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="border bg-white rounded-circle" style="width: 40px;height: 40px;display: flex;justify-content: center;align-items: center;">
+        <i class="fab fa-twitter"></i>
+      </div>
+      <div class="border bg-white rounded-circle" style="width: 40px;height: 40px;display: flex;justify-content: center;align-items: center;">
+        <i class="fab fa-pinterest-p"></i>
+      </div>
+    </div>
+</div>
+</div>
+<hr class="container border" style="display: inline-block;margin-top: 40px;">
+<div class="d-flex justify-content-between w-100 row">
+    <div class="col-lg-6 col-md-12" >
+    <p style="color: #6f6f6f;">Copyright ©2021 All rights reserved | This template is made with  <span class="mx-1"><i class="fas fa-heart" style="color: #6f6f6f;"></i></span> by <span style="color: #007bff;"><a>Colorlib</a></span></p>
+    </div>
+    <div class="col-lg-3 col-md-12 d-flex justify-content-end h-50">
+        <img src="./image/bankCard.png" alt="">
+    </div>
+</div>
+    </div>
+   
+    </div>
+    </div>
+ 
+                                    <!-- Add to Card &&& Like render div  -->
+
+    <div class="cartMenu right position-absolute z-index-3" style="background-color: #f5f5f5;" id="cartRenders">
+    <div id="heading">
+        <div class="heading" style="border-right: 2px solid white;background-color: #7fad39;">Image</div>
+        <div class="heading" style="border-right: 2px solid white;background-color: #7fad39;">Product</div>
+        <div class="heading" style="background-color: #7fad39;">Price</div>
+    </div>
+    <div id="cartrender">
+    </div>
+    <button class="clear" onclick="removeStorage()" style="background-color: #7fad39;">Clear Cart</button>
+</div>
+<div class="cartMenu right position-absolute z-index-3" style="background-color: #f5f5f5;" id="cartRendersdil">
+    <div id="heading">
+        <div class="heading" style="border-right: 2px solid white;background-color: #7fad39;">Image</div>
+        <div class="heading" style="border-right: 2px solid white;background-color: #7fad39;">Product</div>
+        <div class="heading" style="background-color: #7fad39;">Price</div>
+    </div>
+    <div id="cartRenderss">
+    </div>
+    <button class="clear" onclick="removeStorage()" style="background-color: #7fad39;">Clear Cart</button>
+</div>
+
+
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/3c6863251b.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<script src="./AddToCart.js"></script>
+<script src="./like.js"></script>
+</html>
